@@ -1,0 +1,155 @@
+Link:https://course.masaischool.com/assignments/11259/problem/25730
+
+
+1.What is !important
+Ans:The !important rule in CSS is used to add more importance to a property/value than normal.In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!
+    The only way to override an !important rule is to include another !important rule on a declaration with the same (or higher) specificity in the source code - and here the problem starts! This makes the CSS code confusing and the debugging will be hard, especially if you have a large style sheet!
+
+2.What is the box model?
+Ans:In CSS, the term "box model" is used when talking about design and layout.The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content
+   Explanation of the different parts:
+   i)Content - The content of the box, where text and images appear
+   ii)Padding - Clears an area around the content. The padding is transparent
+   iii)Border - A border that goes around the padding and content
+   iv)Margin - Clears an area outside the border. The margin is transparent   
+
+3.What is the difference between position absolute, relative and fixed?
+Ans:The position property specifies the type of positioning method used for an element.
+   There are five different position values:
+   1.static:HTML elements are positioned static by default.
+   2.relative:An element with position: relative; is positioned relative to its normal position.Setting the top,  right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+   3.fixed:An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+   4.absolute:An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.(when we take only absolute it takes reference as html. for suppose, we take relative in parent and absolute in child then absolute will a take reference as parent).Absolute positioned elements are removed from the normal flow, and can overlap elements.
+   5.sticky:An element with position: sticky; is positioned based on the user's scroll position.A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+4.What is CSS positioning?
+Ans:The CSS position property defines the position of an element in a document. This property works with the left, right, top, bottom and z-index properties to determine the final position of an element on a page. There are five values the position property can take
+
+
+5.the difference between display none and display hidden
+Ans:Display:none hides the element from the page, and the space it would take up on the page can be used by other elements.
+    visibility:hidden hides the elements, but it continues to consume the space it normally would
+
+
+6.Difference between flex and grid? Where to use it?
+Ans:The basic difference between CSS Grid and CSS Flex is that 
+   flex was designed for layout in one dimension - either a row or a column. 
+   Grid was designed for two-dimensional layout - rows, and columns at the same time.
+Grid used in dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout enables an author to align elements into columns and rows.
+CSS Grids helps you create the outer layout of the webpage. You can build complex as well responsive design with this. This is why it is called ‘layout first’.
+Flexbox mostly helps align content & move blocks.
+CSS grids are for 2D layouts. It works with both rows and columns.
+Flexbox works better in one dimension only (either rows OR columns).
+It will be more time saving and helpful if you use both at the same time.
+
+
+7.What is BEM?
+Ans:Block Element Modifier
+BEM stands for Block Element Modifier. The main idea behind it is to speed up the development process, and ease the teamwork of developers by arranging CSS classes into independent modules.
+
+
+8.What is the z-index? What is the stacking context?
+Ans:Z Index ( z-index ) is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index. Note: Z index only works on positioned elements ( position:absolute , position:relative , or position:fixed ).
+
+9.Explain briefly what happens when you hit a url? explain DNS lookup
+Ans:You enter a URL into a web browser. The browser looks up the IP address for the domain     name via DNS. 
+      The browser sends a HTTP request to the server. The server sends back a HTTP response.
+      The basic idea of DNS is that humans can't easily remember long strings of digits like machines can, but can much more easily remember words.
+      So, when you type in a domain name like www.techopedia.com, the request is forwarded to a DNS server (whether locally or at an ISP), which returns the corresponding IP address. 
+      This address is then used by all the computers and routers to channel the request and responses of a user's session.
+
+10.What is a URLs full form? Explain what a url is and the four parts it consists of The protocol in use The hostname of the server The location of the file The arguments to the file
+Ans:Uniform Resource Locator.
+     A URL (Uniform Resource Locator) is a unique identifier used to locate a resource on the Internet. It is also referred to as a web address. URLs consist of multiple parts -- including a protocol and domain name -- that tell a web browser how and where to retrieve a resource.
+     i)The protocol or scheme. Used to access a resource on the internet. Protocols include http, https, ftps, mailto and file. The resource is reached through the domain name system (DNS) name. In this example, the protocol is https.
+     ii)The unique reference the represents a webpage. For this example, whatis.techtarget.com.
+     iii) A path refers to a file or location on the web server. For this example, search/query.
+     iv)The query consists of a question mark, followed by parameters. For this example, ?.
+     If a query string is used, it follows the path component, and provides a string of information that the resource can use for some purpose (for example, as parameters for a search or as data to be processed). The query string is usually a string of name and value pairs; for example, term=bluebird. Name and value pairs are separated from each other by an ampersand (&); for example, term=bluebird&source=browser-search.
+
+11.What is HTTP protocol?
+ans:HTTP stands for Hyper Text Transfer Protocol.
+WWW is about communication between web clients and servers.
+a)Clients are often browsers (Chrome, Edge, Safari), but they can be any type of program or device.
+b)Servers are most often computers in the cloud.
+Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses.
+a)A client (a browser) sends an HTTP request to the web
+b)A web server receives the request
+c)The server runs an application to process the request
+d)The server returns an HTTP response (output) to the browser
+e)The client (the browser) receives the response
+
+12.What is TCP Protocol?
+Ans:TCP is responsible for breaking data down into small packets before they can be sent over a network, and for assembling the packets again when they arrive.It is a connection-oriented protocol for communications that helps in the exchange of messages between the different devices over a network.
+
+13.Explain all the different HTTP methods?
+Ans:GET-GET is used to request data from a specified resource.
+POST-POST is used to send data to a server to create/update a resource.
+PUT-PUT is used to send data to a server to create/update a resource.
+      The difference between POST and PUT is that PUT requests are idempotent. That is, calling the same PUT request multiple times will always produce the same result. In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.
+HEAD-HEAD is almost identical to GET, but without the response body.
+     In other words, if GET /users returns a list of users, then HEAD /users will make the same request but will not return the list of users.
+     HEAD requests are useful for checking what a GET request will return before actually making a GET request - like before downloading a large file or response body.
+DELETE-The DELETE method deletes the specified resource.
+PATCH-The PATCH method is used to apply partial modifications to a resource.
+OPTIONS-The OPTIONS method describes the communication options for the target resource.
+CONNECT-The CONNECT method is used to start a two-way communications (a tunnel) with the requested resource.
+TRACE-The TRACE method method is used to perform a message loop-back test that tests the path for the target resource (useful for     debugging purposes).
+
+14.What are HTTP headers?
+Ans:The HTTP headers are used to pass additional information between the clients and the server through the request and response header. All the headers are case-insensitive, headers fields are separated by colon, key-value pairs in clear-text string format. The end of the header section denoted by an empty field header. There are a few header fields that can contain the comments. And a few headers can contain quality(q) key-value pairs that separated by an equal sign. 
+ There are four kinds of headers context-wise: 
+      General Header: This type of headers applied on Request and Response headers both but with out affecting the database body.
+      Request Header: This type of headers contains information about the fetched request by the client.
+      Response Header: This type of headers contains the location of the source that has been requested by the client.
+      Entity Header: This type of headers contains the information about the body of the resources like MIME type, Content-length.
+
+15.What are some HTTP response codes? what does it mean? 2xx, 3xx, 4xx, 5xx
+Ans:HTTP defines these standard status codes that can be used to convey the results of a client’s request. The status codes are divided into five categories.
+1xx: Informational – Communicates transfer protocol-level information. (100-to continue,101-switching protocol)
+2xx: Success – Indicates that the client’s request was accepted successfully.(200-ok,201-created,202-accepted)
+3xx: Redirection – Indicates that the client must take some additional action in order to complete their request.(300-multiple choice,301-moved permentantly)
+4xx: Client Error – This category of error status codes points the finger at clients.(400-Bad Request,401-Unauthorized,403-Forbidden,404-Not Found....)
+5xx: Server Error – The server takes responsibility for these error status codes.(500-Internal Server Error,501-Not Implemented,502-Bad Gateway,504-Gateway Timeout)
+
+16.What does cache control on http response mean?
+Ans:Cache-control is an HTTP header used to specify browser caching policies in both client requests and server responses. Policies include how a resource is cached, where it’s cached and its maximum age before expiring (i.e., time to live).
+
+17.What is polling?
+Ans:Polling is a technique where we check for fresh data over a given interval by periodically making API requests to a server. For example, we can use polling if there is data that changes frequently or we need to wait for the server to transition a given state. 
+
+18.What is long polling?
+Ans:Long polling is the simplest way of having persistent connection with server, that doesn’t use any specific protocol like WebSocket or Server Side Events.
+Being very easy to implement, it’s also good enough in a lot of cases.
+
+19.What are web sockets?
+The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
+
+20.How is web sockets different from HTTP?
+
+21.What is HTTPS?
+
+22.What is Cross Origin Resource Sharing? ( CORS ) Why do we need it?
+
+23.What does Access-Control-Allow-Origin header do?
+
+24.What is clickjacking? How do you fix it?
+
+25.What are some performance metrics for your website?
+
+26.What does the following term mean?
+  i)Time to first byte,
+  ii)Page load time
+
+27.What do CDN or Content Delivery Networks do? When do you need a CDN?
+
+28.What is the difference between Client Side Renderring and Server Side Renderring?
+
+29.What is Progressive Renderring
+
+30.What is the difference between Preloading and Prefetching resources?
+
+31.What are service workers?

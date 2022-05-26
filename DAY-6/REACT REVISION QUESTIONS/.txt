@@ -1,0 +1,39 @@
+Link:https://course.masaischool.com/assignments/11494/problem/25571
+
+1.Explain redux to a 5 year old (ELI5) ?
+
+2.What is immutability?
+Ans:Immutability is a concept that React programmers need to understand. An immutable value or object cannot be changed, so every update creates new value, leaving the old one untouched.
+
+3.What does Object.freeze() do?
+Ans:freeze() which is used to freeze an object. 
+Freezing an object does not allow new properties to be added to an object and prevents from removing or altering the existing properties. 
+Object. freeze() preserves the enumerability, configurability, writability and the prototype of the object.
+
+4.Why is immutability required by Redux?
+Ans:Immutability of redux state is necessary since it allows detecting redux state changes in an efficient manner.This implies that whenever we want to modify a redux state, we must create a new copy of it and do modifications to that copy - which then becomes the new redux state.
+
+5.How does Redux use shallow equality checking?
+Ans:It creates a reference to the current state slice referred to by each key;calls the appropriate reducer and passes it the slice;creates a reference to the possibly-mutated state slice that's returned by the reducer.
+
+6.How well does Redux “scale” in terms of performance and architecture?
+Ans:In fact, React Redux in particular is heavily optimized to cut down on unnecessary re-renders, and React-Redux v5 shows noticeable improvements over earlier versions. Redux may not be as efficient out of the box when compared to other libraries.
+
+7.How does Redux compare to the React Context API?
+Context is great for sharing trivial pieces of state between components. Redux is much more powerful and provides a set of handy features that Context doesn't have. It's great for managing centralized state and handling API requests.
+
+8.https://redux.js.org/faq/
+Ans:
+
+9.What is webpack ?
+Ans:Webpack is a free and open-source module bundler for JavaScript. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included. Webpack takes modules with dependencies and generates static assets representing those modules.
+
+10.What is treeshaking ?
+Ans:Tree Shaking is a concept in development of eliminating dead code or unused code. Imagine your application as a tree. All the libraries, components, widgets & code represents leaves. All the unused code, imports & dead code represents the dead brown leaves
+
+11.What are some features of using webpack?
+Ans:Webpack gives you control over how to treat different assets it encounters. For example, you can decide to inline assets to your JavaScript bundles to avoid requests. Webpack also allows you to use techniques like CSS Modules to couple styling with components, and to avoid issues of standard CSS styling.
+
+
+
+
