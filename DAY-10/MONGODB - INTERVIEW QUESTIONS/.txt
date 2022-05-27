@@ -1,0 +1,30 @@
+Link:https://course.masaischool.com/assignments/11535/problem/25622
+
+1.What are SQL Databases? What are some companies that use Mongo, what type of applications are these?
+2.What are NoSQL Databases? What are some companies that use Mongo, what type of applications are these?
+3.What is the difference between SQL and NoSQL databases?
+4.What are some features of MongoDB?
+5.What are aggregate queries?
+6.What are pipelines in aggregation?
+7.How do you do aggregate queries?
+8.How can you group by a particular value in MongoDB?
+9.How can you paginate on MongoDB?
+10.How can you sort in MongoDB?
+11.What is indexing in MongoDB? Why do we need to use indexing? What are pros and cons for indexing?
+12.Write the query for indexing a field in MongoDB?
+13.What is the improvement in performance in MongoDB?
+14.What is the data structure used for indexing?
+15.Are values sorted in indexes?
+16.What are Replica Sets in MongoDB?
+17.Explain the structure of ObjectID in MongoDB.
+18.By default, which index is created by MongoDB for every collection?
+19.In which format MongoDB represents document structure?
+20.What is the limitation of a document in MongoDB?
+21.What is the difference between MongoDB and Redis database?
+22.How can you add references between multiple collections?
+23.What are lookup in aggregation for MongoDB?
+24.What are graph lookups?
+25.What is the alternative for lookups for SQL?
+26.How can you do one to many relation in MongoDB?
+27.How can you do many to many relation in MongoDB?
+28.How can you do one to zillion relation in MongoDB?
