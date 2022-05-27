@@ -1,6 +1,7 @@
 Link:https://course.masaischool.com/assignments/11535/problem/25622
 
 1.What are SQL Databases? What are some companies that use Mongo, what type of applications are these?
+Ans:SQL stands for Structured Query Language. It's used for relational databases. A SQL database is a collection of tables that stores a specific set of structured data.
 2.What are NoSQL Databases? What are some companies that use Mongo, what type of applications are these?
 3.What is the difference between SQL and NoSQL databases?
 4.What are some features of MongoDB?
