@@ -36,12 +36,26 @@ Ans:Tree Shaking is a concept in development of eliminating dead code or unused 
 Ans:Webpack gives you control over how to treat different assets it encounters. For example, you can decide to inline assets to your JavaScript bundles to avoid requests. Webpack also allows you to use techniques like CSS Modules to couple styling with components, and to avoid issues of standard CSS styling.
 
 16.What are Controlled and Uncontrolled components?
+Ans:Controlled component is component that get the changed value from the callback function and uncontrolled component is component that have the one from the DOM. For example, When input value is changed,we can use onChange function in Controlled Component and also we can get the value using DOM like ref.
+
 17.What is flux architecture?
+Ans:Flux is an application architecture that Facebook uses internally for building the client-side web application with React. It is not a library nor a framework. It is neither a library nor a framework. It is a kind of architecture that complements React as view and follows the concept of Unidirectional Data Flow model.
+
 18.What does React.useCallback do?
+Ans:The React useCallback Hook returns a memoized callback function.Think of memoization as caching a value so that it does not need to be recalculated.This allows us to isolate resource intensive functions so that they will not automatically run on every render.The useCallback Hook only runs when one of its dependencies update.his can improve performance.The useCallback and useMemo Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function. 
+
 19.What does React.memo mean?
+Ans:React. memo is a higher order component. If your component renders the same result given the same props, you can wrap it in a call to React. memo for a performance boost in some cases by memoizing the result. This means that React will skip rendering the component, and reuse the last rendered result.
+
 20.What is Higher-order Components?
+Ans:A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React's compositional nature. Concretely, a higher-order component is a function that takes a component and returns a new component.
+
 21.What are keys in React? Why are keys important?
+Ans:A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used to React to identify which items in the list are changed, updated, or deleted. In other words, we can say that keys are used to give an identity to the elements in the lists
+
 22.What is reconciliation?
+Ans:React provides a declarative API so that you don't have to worry about exactly what changes on every update. This makes writing applications a lot easier, but it might not be obvious how this is implemented within React.
+
 23.Explain life cycle diagram with hooks?
 24.What does the cleanup function in useEffect do?
 25.What are the rules of hooks?
