@@ -1,27 +1,47 @@
+Link:https://course.masaischool.com/assignments/11662/problem/25816
 
+1.Explain redux to a 5 year old (ELI5) ?
+2.how is redux different from context API?
+3.what does useSelector do?
 
-Explain redux to a 5 year old (ELI5) ?
-how is redux different from context API?
-what does useSelector do?
-What is immutability?
-Why do we need to spread the state in redux?
-What does Object.freeze() do?
-Why is immutability required by Redux?
-How does Redux use shallow equality checking?
-How well does Redux “scale” in terms of performance and architecture?
-How does Redux compare to the React Context API?
-FAQs of redux https://redux.js.org/faq/
-What is JSX?
-What is Conditional Rendering?
-What is tree-shaking ?
-What are some features of using webpack?
-What are Controlled and Uncontrolled components?
-What is flux architecture?
-What does React.useCallback do?
-What does React.memo mean?
-What is Higher-order Components?
-What are keys in React? Why are keys important?
-What is reconciliation?
-Explain life cycle diagram with hooks?
-What does the cleanup function in useEffect do?
-What are the rules of hooks?
+4.What is immutability?
+Ans:Immutability is a concept that React programmers need to understand. An immutable value or object cannot be changed, so every update creates new value, leaving the old one untouched.
+
+5.Why do we need to spread the state in redux?
+6.What does Object.freeze() do?
+Ans:freeze() which is used to freeze an object. 
+Freezing an object does not allow new properties to be added to an object and prevents from removing or altering the existing properties. 
+Object. freeze() preserves the enumerability, configurability, writability and the prototype of the object.
+
+7.Why is immutability required by Redux?
+Ans:Immutability of redux state is necessary since it allows detecting redux state changes in an efficient manner.This implies that whenever we want to modify a redux state, we must create a new copy of it and do modifications to that copy - which then becomes the new redux state.
+
+8.How does Redux use shallow equality checking?
+Ans:It creates a reference to the current state slice referred to by each key;calls the appropriate reducer and passes it the slice;creates a reference to the possibly-mutated state slice that's returned by the reducer.
+
+9.How well does Redux “scale” in terms of performance and architecture?
+Ans:In fact, React Redux in particular is heavily optimized to cut down on unnecessary re-renders, and React-Redux v5 shows noticeable improvements over earlier versions. Redux may not be as efficient out of the box when compared to other libraries.
+
+10.How does Redux compare to the React Context API?
+Ans:Context is great for sharing trivial pieces of state between components. Redux is much more powerful and provides a set of handy features that Context doesn't have. It's great for managing centralized state and handling API requests.
+
+11.FAQs of redux https://redux.js.org/faq/
+12.What is JSX?
+13.What is Conditional Rendering?
+14.What is tree-shaking ?
+
+Ans:Tree Shaking is a concept in development of eliminating dead code or unused code. Imagine your application as a tree. All the libraries, components, widgets & code represents leaves. All the unused code, imports & dead code represents the dead brown leaves
+
+15.What are some features of using webpack?
+Ans:Webpack gives you control over how to treat different assets it encounters. For example, you can decide to inline assets to your JavaScript bundles to avoid requests. Webpack also allows you to use techniques like CSS Modules to couple styling with components, and to avoid issues of standard CSS styling.
+
+16.What are Controlled and Uncontrolled components?
+17.What is flux architecture?
+18.What does React.useCallback do?
+19.What does React.memo mean?
+20.What is Higher-order Components?
+21.What are keys in React? Why are keys important?
+22.What is reconciliation?
+23.Explain life cycle diagram with hooks?
+24.What does the cleanup function in useEffect do?
+25.What are the rules of hooks?
