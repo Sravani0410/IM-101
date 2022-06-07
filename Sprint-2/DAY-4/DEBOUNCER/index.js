@@ -46,10 +46,8 @@ const appendData = (data) => {
         var image = document.createElement("img");
          Div.innerHTML = el.strMeal;
          image.src=el.strMealThumb
-
-         
-        
-
-        DisplayDiv.append(Div,image);
+         image.style.width="30%";
+         image.style.height="20%"
+         DisplayDiv.append(Div,image);
     })
 }
