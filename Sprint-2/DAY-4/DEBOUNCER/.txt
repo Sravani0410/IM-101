@@ -1,1 +1,5 @@
 Link:https://course.masaischool.com/assignments/11336/problem/25746
+
+Api:
+API:https://www.themealdb.com/api/json/v1/1/search.php?f=a
+API:https://www.themealdb.com/api/json/v1/1/search.php?s=a
