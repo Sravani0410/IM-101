@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {useState,useEffect} from "react"
 import {Product} from "./components/product"
+import {Routes,Route} from "react-router-dom";
 function App() {
   const [product,setProduct]=useState([])
   useEffect(()=>{
@@ -25,7 +26,16 @@ function App() {
         
        ))
      } */}
-     <Product props={product}/>
+     <Routes>
+       <Route path="/" element={
+        <>
+         <Product props={product}/>
+         </>
+       }>
+         
+       </Route>
+     </Routes>
+    
     </div>
   );
 }

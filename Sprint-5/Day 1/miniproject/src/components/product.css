@@ -1,9 +1,10 @@
-.main{
+.container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin: 30px;
    
 }
-.main img{
-    width: 50%;
+.container .img{
+    width: 20%;
+    height:10%
 }
