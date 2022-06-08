@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema (
                mandal:{type:String},
                district:{type:String},
                state:{type:String},
-               pin_code:{type:Number},
+               pincode:{type:Number},
                country:{type:String,default:"india"}
             }
         ]
