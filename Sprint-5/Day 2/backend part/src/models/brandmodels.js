@@ -1,8 +1,7 @@
 const mongoose=require("mongoose");
 
 const brandSchema=new mongoose.Schema({
-    brand_name:[{type:String}],
-    userId:{type:mongoose.Schema.Types.ObjectId,ref:"user",require:true},
+    productId:{type:mongoose.Schema.Types.ObjectId,ref:"product",require:true},
     },
     {
         versionKey:false,
