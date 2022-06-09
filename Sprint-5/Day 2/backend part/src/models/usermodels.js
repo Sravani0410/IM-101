@@ -14,7 +14,12 @@ const userSchema = new mongoose.Schema (
                pincode:{type:Number},
                country:{type:String,default:"india"}
             }
-        ]
+        ],
+        cart:[
+            {
+             productId:{type:mongoose.Schema.Types.ObjectId,ref:"product",require:true}
+           }
+    ]
     },
     {
         versionKey:false,
