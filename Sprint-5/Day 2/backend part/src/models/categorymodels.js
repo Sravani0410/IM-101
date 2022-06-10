@@ -1,16 +1,16 @@
 const mongoose =require("mongoose")
 
 const categorySchema=new mongoose.Schema({
+    name:{type:String},
     ancestors:[{
-        _id:{type:mongoose.Schema.Types.ObjectId,ref:"category0",index:true},
+        _id:{type:mongoose.Schema.Types.ObjectId,ref:"category"},
         name:{type:String},
-        slug:{type:String}
     }],
-       parentID:{type:mongoose.Schema.Types.ObjectId,ref:"category",default:null}
+       parentId:{type:mongoose.Schema.Types.ObjectId,ref:"category",default:null}
     },{
         timestamps:true,
         versionKey:false,
     }
     )
-    const Category=mongoose.models("category",categorySchema)
-    module.exports=Category
+const Category=mongoose.model("category",categorySchema)
+module.exports=Category

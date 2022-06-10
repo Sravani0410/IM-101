@@ -9,5 +9,5 @@ const orderSchema=new mongoose.Schema({
     versionKey:false
 })
 
-const Order=mongoose.models("order",orderSchema)
+const Order=mongoose.model("order",orderSchema)
 module.exports=Order

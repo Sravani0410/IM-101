@@ -2,8 +2,10 @@ const mongoose=require("mongoose")
 
 const cartSchema=new mongoose.Schema({
     userId:{type:mongoose.Schema.Types.ObjectId,ref:"user",default:true},
-    productId:{type:mongoose.Schema.Types.ObjectId,ref:"product",default:true},
-    count:{type:Number,default:1}
+    productId:{type:mongoose.Schema.Types.ObjectId,ref:"product",default:true}
+},{
+    versionKey:false,
+    timestamps:true
 })
-const Cart=mongoose.models("cart",cartSchema)
+const Cart=mongoose.model("cart",cartSchema)
 module.exports=Cart
